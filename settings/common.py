@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'site_config',
     # third party apps
     'rest_framework',
+    'rest_framework.authtoken',
     'semanticuiform',
     'django_extensions',
     'solo',
@@ -134,6 +135,10 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_PAGINATION_CLASS':
     'rest_framework.pagination.PageNumberPagination',
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.SessionAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ),
 }
 
 # email settings
