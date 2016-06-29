@@ -270,4 +270,5 @@ urlpatterns += [
         include('site_config.urls', namespace='site_config')),
     url(r'^graphs/', include('graphs.urls', namespace='graphs')),
     url(r'^api/', include('api.urls', namespace='api')),
+    url(r'^api-docs/', include('rest_framework_docs.urls')),
 ]

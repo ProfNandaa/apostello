@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     # third party apps
     'rest_framework',
     'rest_framework.authtoken',
+    'rest_framework_docs',
     'semanticuiform',
     'django_extensions',
     'solo',
